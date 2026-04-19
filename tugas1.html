@@ -2,17 +2,19 @@
 <html>
 <head>
     <title>Portfolio</title>
+    <style>
+        .profile {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        nav a { margin-right: 15px; text-decoration: none; }
+        form input, form textarea { margin-bottom: 10px; width: 200px; }
+    </style>
 </head>
-<style>
-.profile {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-</style>
 <body>
-<img src="img foto_sy.jpg" class="profile" alt="Headshot of a smiling young woman with dark hair wearing a casual top against a neutral background">
+
 <header>
     <nav>
         <a href="#">Home</a>
@@ -22,11 +24,12 @@
 </header>
 
 <main>
+    <img src="img/foto_saya.jpeg" class="profile" alt="Foto Profil">
+    
     <h1>Febriana FW Maniani</h1>
     <h2>NIM: 241110096</h2>
     <h3>Program Studi: Teknik Informatika</h3>
 
-    <img src="img/foto_sy.jpg" class="profile" alt="Second portrait of the same young woman in a casual setting with a calm neutral background">
     <h3>Skills</h3>
     <ul>
         <li>HTML</li>
@@ -39,15 +42,17 @@
     </ul>
 
     <h3>Portfolio</h3>
-<img src="https://picsum.photos/150">
-<img src="https://picsum.photos/150">
+    <img src="https://picsum.photos/150" alt="Project 1">
+    <img src="https://picsum.photos/150" alt="Project 2">
+
     <h3>Contact</h3>
     <form>
         <input type="text" placeholder="Nama"><br>
         <input type="email" placeholder="Email"><br>
         <textarea placeholder="Pesan"></textarea><br>
-        <button>Kirim</button>
+        <button type="submit">Kirim</button>
     </form>
 </main>
+
 </body>
 </html>
