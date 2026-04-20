@@ -12,46 +12,44 @@
         nav a { margin-right: 15px; text-decoration: none; }
         form input, form textarea { margin-bottom: 10px; width: 200px; }
     </style>
+    <div class="colors">
+        <div class="background">#f4f4f4</div>
+        <div class="primary">#00adb5</div>
+        <div class="dark">#333</div>
+    </div>
 </head>
 <body>
-
+    
 <header>
     <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
     </nav>
 </header>
 
 <main>
-    <img src="img/foto_saya.jpeg" class="profile" alt="Foto Profil">
-    
+
+<section id="home">
+    <img src="img/foto_saya.jpeg" class="profile">
     <h1>Febriana FW Maniani</h1>
-    <h2>NIM: 241110096</h2>
-    <h3>Program Studi: Teknik Informatika</h3>
+</section>
 
-    <h3>Skills</h3>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-    </ul>
+<section id="about">
+    <h2>About Me</h2>
+    <p>Saya mahasiswa Teknik Informatika yang sedang belajar web development.</p>
+</section>
 
-    <h3>Projects</h3>
-    <ul>
-        <li>Website Portfolio</li>
-    </ul>
-
-    <h3>Portfolio</h3>
-    <img src="https://picsum.photos/150" alt="Project 1">
-    <img src="https://picsum.photos/150" alt="Project 2">
-
-    <h3>Contact</h3>
+<section id="contact">
+    <h2>Contact</h2>
     <form>
         <input type="text" placeholder="Nama"><br>
         <input type="email" placeholder="Email"><br>
         <textarea placeholder="Pesan"></textarea><br>
-        <button type="submit">Kirim</button>
+        <button>Kirim</button>
     </form>
+</section>
+
 </main>
 
 </body>
