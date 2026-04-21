@@ -1,27 +1,135 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Portfolio</title>
+    <title>Portfolio Febriana</title>
+
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* NAVBAR */
+        header {
+            background: #222;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #00adb5;
+        }
+
+        main {
+            margin-top: 80px;
+        }
+
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        /* HOME */
         .profile {
-            width: 120px;
-            height: 120px;
+            width: 140px;
+            height: 140px;
             border-radius: 50%;
             object-fit: cover;
+            border: 4px solid #00adb5;
         }
-        nav a { margin-right: 15px; text-decoration: none; }
-        form input, form textarea { margin-bottom: 10px; width: 200px; }
+
+        /* CARD */
+        .card {
+            background: white;
+            padding: 20px;
+            margin: 15px auto;
+            border-radius: 12px;
+            width: 80%;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        /* SKILLS */
+        .skills {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .skill-box {
+            background: #00adb5;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+
+        /* PORTFOLIO */
+        .portfolio {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .portfolio img {
+            width: 180px;
+            margin: 10px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .portfolio img:hover {
+            transform: scale(1.1);
+        }
+
+        /* CONTACT */
+        form input, form textarea {
+            width: 250px;
+            padding: 8px;
+            margin: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #00adb5;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background: #028a91;
+        }
+
     </style>
-    
-    </div>
 </head>
+
 <body>
 
 <header>
     <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
     </nav>
 </header>
 
@@ -30,29 +138,39 @@
 <section id="home">
     <img src="img/foto_saya.jpeg" class="profile">
     <h1>Febriana FW Maniani</h1>
+    <p>Mahasiswa Teknik Informatika</p>
 </section>
 
 <section id="about">
-    <h2>About Me</h2>
-    <p>Menjadi web developer yang mampu membuat website profesional dan bermanfaat.
-     <h3>Skills</h3>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-    </ul>
-
-    </p>
-    <a href="#skills">Skills</a>
+    <div class="card">
+        <h2>About Me</h2>
+        <p>
+            Saya mahasiswa Teknik Informatika yang memiliki minat dalam web development.
+            Saat ini saya sedang mempelajari HTML dan CSS untuk membuat website yang menarik.
+        </p>
+        <p>
+            Saya berkomitmen untuk terus belajar dan mengembangkan kemampuan di bidang teknologi.
+        </p>
+    </div>
 </section>
+
 <section id="skills">
+    <h2>Skills</h2>
     <div class="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-    </ul>
+        <div class="skill-box">HTML</div>
+        <div class="skill-box">CSS</div>
+        <div class="skill-box">Java</div>
+        <div class="skill-box">MySQL</div>
+    </div>
+</section>
+
+<section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio">
+        <img src="https://picsum.photos/200" alt="">
+        <img src="https://picsum.photos/200" alt="">
+    </div>
+</section>
 
 <section id="contact">
     <h2>Contact</h2>
@@ -63,20 +181,8 @@
         <button>Kirim</button>
     </form>
 </section>
-<section id="portfolio">
-    <h2>Portfolio</h2>
 
-    <div class="portfolio">
-        <img src="img/project1.png" alt="Project 1">
-        <img src="img/project2.png" alt="Project 2">
-    </div>
-</section> 
-<div class="hobby">
-    <h2>Hobby</h2>
-    <p>Hobby saya berolahraga, terutama Hockey indoor.
-        <img src="hockey.jpeg" alt="">
 </main>
-
 
 </body>
 </html>
