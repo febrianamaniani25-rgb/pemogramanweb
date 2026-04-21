@@ -13,7 +13,7 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
-            background-color: #f8f9fa;
+            background-color: #f4f4f4;
             color: #333;
         }
 
@@ -41,7 +41,7 @@
         }
 
         main {
-            margin-top: 80px;
+            margin-top: 100px;
         }
 
         section {
@@ -50,8 +50,8 @@
         }
 
         .profile {
-            width: 140px;
-            height: 140px;
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
             object-fit: cover;
             border: 4px solid #063039;
@@ -60,15 +60,16 @@
 
         .card {
             background: white;
-            padding: 30px;
+            padding: 25px;
             margin: 15px auto;
             border-radius: 15px;
             width: 85%;
             max-width: 800px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: 0.3s;
         }
 
-        /* Bagian Form Contact yang sudah diperbaiki */
+        /* Gaya Form Input yang Baru */
         form {
             max-width: 500px;
             margin: 0 auto;
@@ -79,13 +80,13 @@
             padding: 12px;
             margin-bottom: 15px;
             border-radius: 8px;
-            border: 1px solid #ddd;
-            box-sizing: border-box; /* Biar tetap rapi */
+            border: 1px solid #ccc;
+            box-sizing: border-box; 
             font-family: inherit;
         }
 
         button {
-            padding: 12px 30px;
+            padding: 12px 35px;
             background: #108aa9;
             color: white;
             border: none;
@@ -100,7 +101,7 @@
             transform: translateY(-2px);
         }
 
-        /* Animasi Fade In */
+        /* Animasi */
         .fade-in {
             opacity: 0;
             transform: translateY(20px);
@@ -108,10 +109,14 @@
         }
 
         @keyframes fadeIn {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .portfolio-img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -122,7 +127,7 @@
     <nav>
         <a href="#home">Home</a>
         <a href="#about">About</a>
-        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
         <a href="#portfolio">Portfolio</a>
         <a href="#contact">Contact</a>
     </nav>
@@ -132,29 +137,59 @@
     <section id="home" class="fade-in">
         <img src="foto_saya.jpeg" alt="Foto Profil" class="profile">
         <h1>Febriana FW Maniani</h1>
-        <p>Mahasiswa Teknik Informatika</p>
+        <p>Student | Tech Enthusiast | Hockey Player</p>
     </section>
 
     <section id="about" class="fade-in">
         <div class="card">
             <h2>About Me</h2>
-            <p>Saya mahasiswa Teknik Informatika yang memiliki minat dalam web development. Saat ini saya sedang mempelajari HTML dan CSS untuk membuat website yang menarik.</p>
+            <p>Saya adalah mahasiswa yang tertarik dalam dunia pemrograman web dan analisis data. Saya senang mempelajari hal baru dan aktif dalam kegiatan organisasi maupun olahraga.</p>
+        </div>
+    </section>
+
+    <section id="experience" class="fade-in">
+        <h2>Experience</h2>
+        <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+            <div class="card" style="max-width: 350px; text-align: left;">
+                <h3 style="color: #108aa9; margin-top: 0;">⚜️ Pramuka</h3>
+                <p>Aktif dalam organisasi Pramuka yang melatih kedisiplinan, kemandirian, dan kemampuan bekerja sama dalam tim.</p>
+            </div>
+            <div class="card" style="max-width: 350px; text-align: left;">
+                <h3 style="color: #108aa9; margin-top: 0;">🏑 Indoor Hockey</h3>
+                <p>Berlatih rutin dalam olahraga Hockey. Mengajarkan saya tentang sportivitas, strategi, dan koordinasi tim yang kuat.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="fade-in">
+        <h2>My Projects</h2>
+        <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+            <div class="card" style="width: 280px;">
+                <img src="hockey.jpeg" alt="Project 1" class="portfolio-img">
+                <h3>Database Project</h3>
+                <p style="font-size: 14px;">Pengembangan sistem database menggunakan Oracle SQL.</p>
+            </div>
+            <div class="card" style="width: 280px;">
+                <img src="html-css.jpeg" alt="Project 2" class="portfolio-img">
+                <h3>Web Design</h3>
+                <p style="font-size: 14px;">Membangun tampilan website responsif dengan HTML & CSS.</p>
+            </div>
         </div>
     </section>
 
     <section id="contact" class="fade-in">
-        <h2>Contact</h2>
-        <form>
-            <input type="text" placeholder="Nama">
-            <input type="email" placeholder="Email">
-            <textarea placeholder="Pesan" rows="4"></textarea>
-            <button type="button">Kirim</button>
+        <h2>Get In Touch</h2>
+        <form action="mailto:emailkamu@gmail.com" method="post" enctype="text/plain">
+            <input type="text" name="Nama" placeholder="Nama Lengkap" required>
+            <input type="email" name="Email" placeholder="Email" required>
+            <textarea name="Pesan" placeholder="Tulis pesan kamu di sini..." rows="5" required></textarea>
+            <button type="submit">Kirim Pesan</button>
         </form>
     </section>
 </main>
 
 <footer style="background:#54cefa; color:black; text-align:center; padding:30px 20px;">
-    <p style="font-weight: bold; margin-bottom: 10px;">© 2026 Febriana FW Maniani</p>
+    <p style="font-weight: bold;">© 2026 Febriana FW Maniani</p>
 
     <div class="social">
         <a href="https://instagram.com/five2sixfebri_____" target="_blank" style="text-decoration: none; color: black; display: flex; align-items: center; justify-content: center; gap: 8px;">
@@ -163,11 +198,9 @@
         </a>
     </div>
 
-    <div style="margin-top: 25px;">
-        <p style="font-size: 14px; font-weight: 400; letter-spacing: 1px; margin-bottom: 5px;">
-            Made with ❤️ by Febriana
-        </p>
-        <p style="font-size: 9px; opacity: 0.4;">
+    <div style="margin-top: 20px;">
+        <p style="font-size: 14px; letter-spacing: 1px; margin-bottom: 5px;">Made with ❤️ by Febriana</p>
+        <p style="font-size: 9px; opacity: 0.3;">
             Resource: <a href="https://www.flaticon.com/" style="color: black; text-decoration: none;">Flaticon</a>
         </p>
     </div>
