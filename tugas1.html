@@ -32,7 +32,7 @@
             font-weight: bold;
         }
 
-        main { margin-top: 100px; }
+        main { margin-top: 100px; padding-bottom: 50px; }
 
         section {
             padding: 60px 20px;
@@ -112,6 +112,25 @@
         }
 
         @keyframes fadeIn { to { opacity: 1; transform: translateY(0); } }
+
+        /* Gaya Khusus Footer */
+        footer {
+            background: #54cefa;
+            color: #000;
+            text-align: center;
+            padding: 50px 20px; /* Menambah ruang agar teks tidak hilang */
+            margin-top: 50px;
+        }
+
+        .social a {
+            text-decoration: none;
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-weight: bold;
+        }
     </style>
 </head>
 
@@ -159,7 +178,7 @@
     <section id="about" class="fade-in">
         <div class="card" style="width: auto; max-width: 800px; text-align: center; margin: 0 auto;">
             <h2>About Me</h2>
-            <p>Saya mahasiswa Teknik Informatika yang tertarik dalam dunia web development. Aktif dalam organisasi Pramuka dan olahraga Hockey yang melatih kerja sama tim dan disiplin.</p>
+            <p>Saya mahasiswa Teknik Informatika yang tertarik dalam dunia web development. Aktif dalam organisasi Pramuka dan olahraga Hockey.</p>
         </div>
     </section>
 
@@ -169,12 +188,12 @@
             <div class="card" style="text-align: left;">
                 <img src="pramka.jpeg" alt="Pramka" class="portfolio-img">
                 <h3 style="color: #108aa9;">⚜️ Pramka</h3>
-                <p style="font-size: 14px; line-height: 1.6;">Aktif dalam organisasi Pramuka yang melatih kedisiplinan dan kepemimpinan dalam tim.</p>
+                <p style="font-size: 14px;">Aktif dalam organisasi Pramuka melatih kedisiplinan dan kepemimpinan.</p>
             </div>
             <div class="card" style="text-align: left;">
                 <img src="hockey.jpeg" alt="Hockey" class="portfolio-img">
                 <h3 style="color: #108aa9;">🏑 Indoor Hockey</h3>
-                <p style="font-size: 14px; line-height: 1.6;">Berlatih rutin dalam olahraga Hockey untuk melatih ketangkasan fisik dan koordinasi tim.</p>
+                <p style="font-size: 14px;">Melatih ketangkasan fisik dan koordinasi tim dalam olahraga Hockey.</p>
             </div>
         </div>
     </section>
@@ -183,14 +202,14 @@
         <h2>My Projects</h2>
         <div class="flex-container">
             <div class="card">
-                <img src="sqql.png" alt="Database Project" class="portfolio-img">
+                <img src="sqql.png" alt="Database" class="portfolio-img">
                 <h3>Database Project</h3>
-                <p style="font-size: 13px;">Pengembangan sistem database menggunakan Oracle SQL untuk manajemen data.</p>
+                <p style="font-size: 13px;">Pengembangan sistem database menggunakan Oracle SQL.</p>
             </div>
             <div class="card">
-                <img src="projekhtml.png" alt="Web Design" class="portfolio-img">
+                <img src="projekhtml.png" alt="Web" class="portfolio-img">
                 <h3>Web Design</h3>
-                <p style="font-size: 13px;">Membangun tampilan website portfolio responsif menggunakan HTML5 & CSS3.</p>
+                <p style="font-size: 13px;">Website portfolio responsif menggunakan HTML5 & CSS3.</p>
             </div>
         </div>
     </section>
@@ -206,13 +225,19 @@
     </section>
 </main>
 
-<footer style="background:#54cefa; color:black; text-align:center; padding:40px 20px;">
+<footer>
     <p style="font-weight: bold; margin-bottom: 15px;">© 2026 Febriana FW Maniani</p>
+    
     <div class="social">
-        <a href="https://instagram.com/five2sixfebri_____" target="_blank" style="text-decoration: none; color: black; display: flex; align-items: center; justify-content: center; gap: 8px;">
-            <img src="instagram.jpeg" alt="Instagram" style="width: 24px; height: 24px;"> 
+        <a href="https://instagram.com/five2sixfebri_____" target="_blank">
+            <img src="instagram.jpeg" alt="Instagram" style="width: 24px; height: 24px; object-fit: contain;"> 
             <span>@five2sixfebri_____</span>
         </a>
+    </div>
+
+    <div style="margin-top: 25px;">
+        <p style="font-size: 14px; letter-spacing: 1px; margin-bottom: 5px;">Made with ❤️ by Febriana</p>
+        <p style="font-size: 10px; opacity: 0.6;">Resource: <a href="https://www.flaticon.com/" style="color: black; text-decoration: none;">Flaticon</a></p>
     </div>
 </footer>
 
