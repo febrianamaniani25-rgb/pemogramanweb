@@ -5,68 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biodata Febriana F.W Maniani</title>
     <style>
-
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 20px;
-            
-            
-            background-color: #70eaf3; 
-            
+            background-color: #e9ecef; /* Warna latar belakang halaman */
         }
 
         .container {
-            max-width: 600px; 
-            margin: 0 auto;  
-            background-color: #fdfeff;
-            padding: 30px;
-            border-radius: 10px; 
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
-            text-align: left; 
+            max-width: 700px;
+            margin: 0 auto;
+            background-color: #211668;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
         }
 
-       
+        /* Foto Utama */
         .profile-pic-container {
-            text-align: center; 
-            margin-bottom: 20px;
+            text-align: center;
+            margin-bottom: 30px;
         }
 
         .profile-pic {
-            max-width: 250px; 
+            width: 200px; 
             height: auto;
-            border-radius: 5px; 
-            border: 1px solid #ddd;
+            border-radius: 10px;
+            border: 3px solid #0056b3;
         }
 
-        h1 {
-            color: #333;
-            margin-top: 0;
-            margin-bottom: 10px;
-            font-size: 28px;
+        h1, h2 { text-align: center; color: #333; }
+
+        .edu-item {
+            display: flex;
+            align-items: center; 
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 8px;
+            transition: background 0.3s;
         }
 
-        .description {
+        .edu-item:hover {
+            background-color: #97c1eb;
+        }
+
+        .logo-sekolah {
+            width: 60px; /
+            height: 60px;
+            object-fit: contain; 
+            margin-right: 20px; 
+        }
+
+        .edu-text {
             font-size: 1.1em;
-            color: #555;
-            margin-bottom: 20px;
+            font-weight: bold;
+            color: #8beabe;
         }
 
-        h2 {
-            border-bottom: 2px solid #0056b3; 
-            padding-bottom: 5px;
-            margin-top: 25px;
-            color: #0056b3;
+        .details-list {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
         }
 
-        ul, ol {
-            padding-left: 20px;
-            margin-bottom: 20px;
-        }
-
-        li {
-            margin-bottom: 8px;
-            color: #444;
+        .details-list li {
+            padding: 8px 0;
+            border-bottom: 1px dashed #e883f1;
         }
     </style>
 </head>
@@ -75,29 +79,34 @@
     <div class="container">
         
         <div class="profile-pic-container">
-            <img src="foto_saya.jpeg" alt="Foto Profil Febriana F.W Maniani, Mahasiswa UMBY" class="profile-pic">
+            <img src="foto_saya.jpeg" alt="Febriana F.W Maniani" class="profile-pic">
         </div>
 
         <h1>Febriana F.W Maniani</h1>
-        <p class="description">Description: Mahasiswa UMBY 2026.</p>
+        <p style="text-align: center; color: #666;">Description: Mahasiswa UMBY 2026.</p>
 
-        <ul>
-            <li>NIM : 241110096</li>
-            <li>Nama : Febriana F.W Maniani</li>
-            <li>Program Studi : Teknik Informatika</li>
+        <ul class="details-list">
+            <li><strong>NIM:</strong> 241110096</li>
+            <li><strong>Nama:</strong> Febriana F.W Maniani</li>
+            <li><strong>Program Studi:</strong> Teknik Informatika</li>
         </ul>
 
-        <h2>Education</h2>
-        <p>Details about educational background:</p>
+        <h2>Education Background</h2>
         
-        <ol>
-            <li>SMP Negeri 1 TOR ATAS</li>
-            <img src="smp.jpeg" alt="">
-            <li>SMA BOPKRI 1 YOGYAKARTA</li>
-            <img src="logo.png" alt="">
-            <li>UNIVERSITAS MERCU BUANA YOGYAKARTA</li>
-            <img src="LOGO UMBY.png" alt="">
-        </ol>
+        <div class="edu-item">
+            <img src="logo_smp.png" alt="Logo SMP" class="logo-sekolah">
+            <div class="edu-text">SMP Negeri 1 TOR ATAS</div>
+        </div>
+
+        <div class="edu-item">
+            <img src="logo_sma.png" alt="Logo SMA" class="logo-sekolah">
+            <div class="edu-text"> SMA BOPKRI 1 YOGYAKARTA</div>
+        </div>
+
+        <div class="edu-item">
+            <img src="logo_umby.png" alt="Logo UMBY" class="logo-sekolah">
+            <div class="edu-text">UNIVERSITAS MERCU BUANA YOGYAKARTA</div>
+        </div>
 
     </div>
 
