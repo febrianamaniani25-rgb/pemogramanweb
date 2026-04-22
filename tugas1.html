@@ -62,20 +62,29 @@
             background: white;
             padding: 20px;
             border-radius: 15px;
-            width: 320px;
+            width: 300px; /* Sedikit disesuaikan agar pas 3 kolom */
             box-shadow: 0 8px 20px rgba(0,0,0,0.06);
             transition: 0.3s;
-            text-align: left;
+            text-align: center; /* Menengahkan teks skill */
         }
 
         .card:hover { transform: translateY(-5px); }
 
-        .portfolio-img {
+        .portfolio-img, .skill-icon {
             width: 100%;
             height: 180px;
             object-fit: cover;
             border-radius: 10px;
             margin-bottom: 15px;
+        }
+
+        /* Khusus untuk ikon skill agar ukurannya proporsional */
+        .skill-icon {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            margin: 0 auto 15px auto;
+            display: block;
         }
 
         form { max-width: 500px; margin: 0 auto; }
@@ -114,7 +123,7 @@
     <nav>
         <a href="#home">Home</a>
         <a href="#about">About</a>
-        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a> <a href="#experience">Experience</a>
         <a href="#portfolio">Portfolio</a>
         <a href="#contact">Contact</a>
     </nav>
@@ -127,6 +136,27 @@
         <p>Mahasiswa Teknik Informatika | Hockey Player</p>
     </section>
 
+    <section id="skills" class="fade-in">
+        <h2>My Skills</h2>
+        <div class="flex-container">
+            <div class="card">
+                <img src="java-logo.png" alt="Java" class="skill-icon">
+                <h3 style="color: #108aa9;">Java Programming</h3>
+                <p style="font-size: 14px;">Pengembangan aplikasi desktop menggunakan Java dan NetBeans (JFrame).</p>
+            </div>
+            <div class="card">
+                <img src="canva-logo.png" alt="Canva" class="skill-icon">
+                <h3 style="color: #108aa9;">Canva Design</h3>
+                <p style="font-size: 14px;">Membuat desain konten kreatif, presentasi, dan materi publikasi digital.</p>
+            </div>
+            <div class="card">
+                <img src="capcut-logo.png" alt="CapCut" class="skill-icon">
+                <h3 style="color: #108aa9;">CapCut Editing</h3>
+                <p style="font-size: 14px;">Editing video kreatif dengan teknik noise reduction dan sinkronisasi audio.</p>
+            </div>
+        </div>
+    </section>
+
     <section id="about" class="fade-in">
         <div class="card" style="width: auto; max-width: 800px; text-align: center; margin: 0 auto;">
             <h2>About Me</h2>
@@ -137,12 +167,12 @@
     <section id="experience" class="fade-in">
         <h2>Experience</h2>
         <div class="flex-container">
-            <div class="card">
+            <div class="card" style="text-align: left;">
                 <img src="pramka.jpeg" alt="Pramka" class="portfolio-img">
                 <h3 style="color: #108aa9;">⚜️ Pramka</h3>
                 <p style="font-size: 14px; line-height: 1.6;">Aktif dalam organisasi Pramuka yang melatih kedisiplinan dan kepemimpinan dalam tim.</p>
             </div>
-            <div class="card">
+            <div class="card" style="text-align: left;">
                 <img src="hockey.jpeg" alt="Hockey" class="portfolio-img">
                 <h3 style="color: #108aa9;">🏑 Indoor Hockey</h3>
                 <p style="font-size: 14px; line-height: 1.6;">Berlatih rutin dalam olahraga Hockey untuk melatih ketangkasan fisik dan koordinasi tim.</p>
@@ -153,12 +183,12 @@
     <section id="portfolio" class="fade-in">
         <h2>My Projects</h2>
         <div class="flex-container">
-            <div class="card" style="text-align: center;">
+            <div class="card">
                 <img src="sql.jpeg" alt="Database Project" class="portfolio-img">
                 <h3>Database Project</h3>
                 <p style="font-size: 13px;">Pengembangan sistem database menggunakan Oracle SQL untuk manajemen data.</p>
             </div>
-            <div class="card" style="text-align: center;">
+            <div class="card">
                 <img src="html-css.jpeg" alt="Web Design" class="portfolio-img">
                 <h3>Web Design</h3>
                 <p style="font-size: 13px;">Membangun tampilan website portfolio responsif menggunakan HTML5 & CSS3.</p>
