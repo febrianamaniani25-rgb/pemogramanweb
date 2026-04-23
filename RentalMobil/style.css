@@ -1,12 +1,16 @@
 #search {
-    width: 100 px;
-    height: 80 em;
-    background-image: url("https://i.pinimg.com/736x/42/f3/7d/42f37d3350336a29f10960947836ce6f.jpg");
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), 
+                      url("https://i.pinimg.com/736x/90/1f/44/901f440bc54fd293a694666631548f1f.jpg");
     background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
 }
 
 body {
@@ -16,18 +20,22 @@ body {
 }
 
 .title {
-    color: rgb(0, 0, 0);
+    color: white; 
     text-align: center;
+    z-index: 2;
 }
 
 .title h1 {
-    font-size: 3em;
+    font-size: 4em; 
+    font-family: 'Serif', Georgia, serif; 
     margin: 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); 
 }
 
 .title p {
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin: 0.5em 0;
+    font-style: italic;
 }
 
 .title hr {
@@ -39,14 +47,17 @@ body {
 }
 
 .form-container {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 3em;
-    border-radius: 1em;
+    padding: 2em 3em;
+    border-radius: 15px;
     color: white;
     gap: 2em;
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .form-container select,
@@ -68,67 +79,61 @@ body {
     cursor: pointer;
 }
 
+/* Bagian List Mobil Berjejer */
 .car-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
     gap: 2rem;
-    padding: 4rem 2rem;
-    max-width: 1200px;
+    padding: 100px 2rem 50px 2rem; 
+    max-width: 100%;
     margin: 0 auto;
-    align-items: stretch;
+    scroll-behavior: smooth;
+    position: relative; 
 }
+
 
 .car-list h2 {
     font-size: 2.5em;
-    margin-bottom: 1.5em;
-    grid-column: 1 / -1;
-    text-align: center;
     color: #333;
+    position: absolute; 
+    top: 30px; 
+    left: 50%;
+    transform: translateX(-50%); 
+    margin: 0;
+    white-space: nowrap;
 }
 
 .car-item {
+    flex: 0 0 350px; 
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
     border-radius: 1rem;
     overflow: hidden;
     box-shadow: 0 10px 20px rgba(0,0,0,0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid #eee;
-    width: 100%;
+    transition: transform 0.3s ease;
 }
 
 .car-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.12);
 }
 
 .car-item img {
     width: 100%;
-    aspect-ratio: 16 / 9; 
-    object-fit: contain;  
-    background-color: #c7bfbf; 
-    object-position: center;
-    display: block;
-}
-
-.car-item .car-info {
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    justify-content: space-between;
+    height: 200px;
+    object-fit: cover;
 }
 
 .car-item h3 {
-    margin: 0 0 0.5rem 0;
+    margin: 1rem 1rem 0.5rem 1rem;
     font-size: 1.4rem;
     color: #333;
 }
 
 .car-item p {
-    margin: 0 0 1rem 0;
+    margin: 0 1rem 1.5rem 1rem;
     font-size: 1rem;
     color: #666;
-    line-height: 1.5;
 }
