@@ -1,3 +1,9 @@
+body {
+    margin: 0;
+    background-color: #f0fdfc;
+    font-family: sans-serif;
+}
+
 #search {
     width: 100%;
     height: 100vh;
@@ -11,12 +17,6 @@
     align-items: center;
     flex-direction: column;
     position: relative;
-}
-
-body {
-    margin: 0;
-    background-color: #f0fdfc;
-    font-family: sans-serif;
 }
 
 .title {
@@ -78,8 +78,9 @@ body {
     color: white;
     cursor: pointer;
 }
-
-/* Bagian List Mobil Berjejer */
+.form-container button:hover {
+    background-color: #93dff0;
+}
 .car-list {
     display: flex;
     flex-direction: row;
@@ -92,7 +93,6 @@ body {
     scroll-behavior: smooth;
     position: relative; 
 }
-
 
 .car-list h2 {
     font-size: 2.5em;
@@ -136,4 +136,93 @@ body {
     margin: 0 1rem 1.5rem 1rem;
     font-size: 1rem;
     color: #666;
+}
+
+.site-footer {
+    background-color: #fff;
+    margin-top: 80px;
+    border-top: 1px solid #eee;
+    width: 100%;
+    clear: both;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 280px;
+    line-height: 1.6;
+    color: #444;
+}
+
+.footer-title {
+    background-color: #000;
+    color: #fff;
+    padding: 12px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.footer-links a {
+    color: #0073aa;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.address-section {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.opening-hours {
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+/* --- COPYRIGHT BAR (PALING BAWAH) --- */
+.footer-bottom {
+    background-color: #1a1a1a;
+    color: #888;
+    padding: 15px 0;
+    width: 100%;
+}
+
+.bottom-wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .bottom-wrap {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    .footer-column {
+        width: 100%;
+    }
 }
