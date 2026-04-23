@@ -74,12 +74,12 @@ body {
     padding: 0.5em 1em;
     border: none;
     border-radius: 0.5em;
-    background-color: #ff5722;
+    background-color: #5695cf;
     color: white;
     cursor: pointer;
 }
 .form-container button:hover {
-    background-color: #93dff0;
+    background-color: #f0e2ba;
 }
 .car-list {
     display: flex;
