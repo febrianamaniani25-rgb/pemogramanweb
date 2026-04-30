@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sixtwo Stay</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="hero">
+        <h1 class="title">Welcome to Sixtwo Stay</h1>
+        <p class="subtitle">Find your perfect homestay experience with us!</p>
+    </header>
+
+   
+    <section class="search-box">
+        <h2 class="search-title">Search for Homestays</h2>
+
+        <form class="search-form">
+
+            <input type="text" class="search-input" placeholder="Enter location, name, or amenities">
+
+            <div class="form-group">
+                <label>Tipe Kamar</label>
+                <select name="tipe_kamar">
+                    <option value="">Pilih Tipe Kamar</option>
+                    <option value="single">Single</option>
+                    <option value="double">Double</option>
+                    <option value="suite">Suite</option>
+                    <option value="family">Family</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Check-in</label>
+                <input type="date" name="check-in">
+            </div>
+
+            <div class="form-group">
+                <label>Check-out</label>
+                <input type="date" name="check-out">
+            </div>
+
+            <div class="form-group">
+                <label>Jumlah Tamu</label>
+                <select name="jumlah_tamu">
+                    <option value="">Jumlah Tamu</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+            </div>
+
+            <button type="submit" class="search-button">Search</button>
+
+        </form>
+
+        
+        <div id="result" class="result-container"></div>
+    </section>
+
+    
+    <script>
+    document.querySelector(".search-form").addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        const result = document.getElementById("result");
+
+        result.innerHTML = `
+            <div class="card">
+                <img src="https://i.pinimg.com/1200x/29/27/ae/2927ae3a4803201af4d81ef176e4f69a.jpg" alt="Deluxe Room">
+                <h3>Single Room</h3>
+                <p>Rp 350.000 / malam</p>
+            </div>
+
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/83/7d/7c/837d7c87d8657d0260f6adc312f3293c.jpg" alt="Suite Room">
+                <h3>Double Room</h3>
+                <p>Rp 500.000 / malam</p>
+            </div>
+
+            <div class="card">
+                <img src="https://i.pinimg.com/1200x/6b/a0/17/6ba017127af5144ebd11ced4eb54fe92.jpg" alt="Suite Room">
+                <h3>Suite Room</h3>
+                <p>Rp 550.000 / malam</p>
+            </div>
+
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/e0/11/bb/e011bbf4110492589ba40ef62b21c976.jpg" alt="Suite Room">
+                <h3>Family Room</h3>
+                <p>Rp 600.000 / malam</p>
+            </div>
+
+         <div class="footer-box">
+            <h3>Kontak</h3>
+            <p>📍 Yogyakarta</p>
+            <p>📞 0812-0000-0000</p>
+            <p>⏰ 09:00 - 18:00</p>
+        </div>
+
+
+        `;
+    });
+    </script>
+
+</body>
+</html>

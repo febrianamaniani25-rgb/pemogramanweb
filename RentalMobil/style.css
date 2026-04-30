@@ -74,7 +74,7 @@ body {
     padding: 0.5em 1em;
     border: none;
     border-radius: 0.5em;
-    background-color: #ff5722;
+    background-color: #86b7fc;
     color: white;
     cursor: pointer;
 }
@@ -107,7 +107,7 @@ body {
     flex: 0 0 350px; 
     display: flex;
     flex-direction: column;
-    background-color: #ffffff;
+    background-color: #fafafa;
     border-radius: 1rem;
     overflow: hidden;
     box-shadow: 0 10px 20px rgba(0,0,0,0.08);
