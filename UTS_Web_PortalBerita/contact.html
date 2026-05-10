@@ -2,13 +2,12 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Portal Berita</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Hubungi Kami</h1>
-    </header>
 
     <nav>
         <ul>
@@ -19,26 +18,50 @@
     </nav>
 
     <main>
-    <h2>Formulir Kontak</h2>
-    <p>Email: redaksi@portalberita.com</p>
-    <p>Alamat: Kampus Universitas Mercu Buana Yogyakarta</p>
+        <div class="contact-container">
+            <h2>Hubungi Kami</h2>
+            
+            <div class="contact-info-list" style="margin-bottom: 25px; text-align: left;">
+                <div style="margin-bottom: 12px;">
+                    <i class="fas fa-envelope" style="color: #333; width: 25px;"></i>
+                    <strong>Email:</strong> redaksi@portalberita.com
+                </div>
+                <div style="margin-bottom: 12px;">
+                    <i class="fas fa-map-marker-alt" style="color: #ff4d4d; width: 25px;"></i>
+                    <strong>Alamat:</strong> Kampus Universitas Mercu Buana Yogyakarta
+                </div>
+            </div>
 
-    <form action="#" method="post">
-        <label for="name">Nama:</label><br>
-        <input type="text" id="name" name="name" required><br><br>
+            <div class="social-buttons" style="margin-bottom: 30px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                <a href="https://instagram.com/five2sixfebri_____" target="_blank" class="btn-social ig">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a href="https://wa.me/6281326857016" target="_blank" class="btn-social wa">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+            </div>
 
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
-
-        <label for="message">Pesan:</label><br>
-        <textarea id="message" name="message" required></textarea><br><br>
-
-        <button type="submit">Kirim</button>
-    </form>
-</main>
+            <form action="#" style="text-align: left;">
+                <div class="form-group">
+                    <label>Nama Lengkap:</label>
+                    <input type="text" name="nama" placeholder="Masukkan nama Anda">
+                </div>
+                <div class="form-group">
+                    <label>Alamat Email:</label>
+                    <input type="email" name="email" placeholder="contoh@email.com">
+                </div>
+                <div class="form-group">
+                    <label>Pesan Anda:</label>
+                    <textarea name="pesan" placeholder="Tuliskan pesan atau saran kamu di sini..."></textarea>
+                </div>
+                <button type="submit" class="btn-read" style="width: 100%; cursor: pointer;">Kirim Pesan</button>
+            </form>
+        </div>
+    </main>
 
     <footer>
         <p>&copy; 2026 Portal Berita - Febriana F.W. Maniani</p>
     </footer>
+
 </body>
 </html>

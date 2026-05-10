@@ -2,36 +2,67 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Portal Berita - Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Berita - Febriana F.W. Maniani</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
         <h1>Portal Berita Mahasiswa</h1>
     </header>
 
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Beranda</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
     <main>
-        <h2>Berita Terbaru</h2>
-        <article>
-            <h3>Teknologi AI Semakin Pesat</h3>
-            <p>Perkembangan kecerdasan buatan kini merambah dunia pendidikan...</p>
-        </article>
-        <article>
-            <h3>Tips Coding untuk Pemula</h3>
-            <p>Belajar pemrograman web menggunakan HTML dan CSS itu mudah...</p>
-        </article>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Selamat Datang di Portal Berita Kampus</h2>
+                <p>Informasi Terkini seputar Informatika dan Teknologi</p>
+            </div>
+        </section>
+
+        <h2 class="section-title" style="text-align: center; margin: 20px 0;">Berita IT Terkini</h2>
+        
+        <div class="news-grid">
+            <article class="news-card">
+                <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=400" alt="AI Tools">
+                <div class="card-content">
+                    <h3>Teknologi AI di Tahun 2026</h3>
+                    <p>Perkembangan AI semakin mempermudah mahasiswa dalam belajar coding dan mengerjakan projek secara efisien.</p>
+                    <a href="berita-ai.html" class="btn-read">Baca Selengkapnya</a>
+                </div>
+            </article>
+
+            <article class="news-card">
+                <img src="https://images.unsplash.com/photo-1593062096033-9a26b09da705?auto=format&fit=crop&w=400" alt="WordPress">
+                <div class="card-content">
+                    <h3>Hosting & CMS WordPress</h3>
+                    <p>Cara mudah meng-online-kan website menggunakan layanan hosting dan pilihan template WordPress terbaik.</p>
+                    <a href="berita-hosting.html" class="btn-read">Baca Selengkapnya</a>
+                </div>
+            </article>
+
+            <article class="news-card">
+                <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=400" alt="Template">
+                <div class="card-content">
+                    <h3>Template Web Modern</h3>
+                    <p>Kumpulan template website yang responsif dan estetik untuk membuat projek aplikasi kamu terlihat profesional.</p>
+                    <a href="berita-template.html" class="btn-read">Baca Selengkapnya</a>
+                </div>
+            </article>
+        </div>
     </main>
 
     <footer>
         <p>&copy; 2026 Portal Berita - Febriana F.W. Maniani</p>
     </footer>
+
 </body>
 </html>
